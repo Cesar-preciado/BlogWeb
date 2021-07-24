@@ -1,0 +1,323 @@
+*{
+	/*background: #fff;*/ 
+	font-family: arial;
+	box-sizing: border-box;
+
+	padding: 0;
+	margin: 0;
+
+}
+
+#app .app-header{
+	border-bottom: 1px solid #3038302e;
+	display: flex;
+	justify-content: space-between;
+	padding: 12px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background: #fff;
+}
+
+#app .app-header h1{
+	font-size: 17px;
+	color: #1d951d;
+}
+
+#app .app-header #menu-hamburguesa{
+	width: 36px;
+	height: auto;
+	padding: 0 3px;
+}
+
+
+#menu-hamburguesa .bar{
+	background: #168f16e8;
+	height: 3px;
+	margin: 7px 0;
+	cursor: pointer;
+}
+
+#menu-d-navegacion{
+	display: none;
+}
+
+
+
+
+#main .articulos{
+	border-bottom: 1px solid #1d2d1b1f;
+	margin: 73px 0 0 0;
+	height: auto;
+	padding-bottom: 30px;
+	padding-top: 81px;
+}
+
+.articulos .art{
+	/*! height: 200px; */
+	margin: 0 30px 110px 30px;
+	
+}
+
+
+@media screen and (min-width: 768px){
+	
+	#main .articulos{ 
+	 display: flex;
+	 justify-content: space-evenly;
+	 flex-wrap: wrap;
+	 margin: 0;
+	 padding: 0;
+	}
+	
+
+.articulos .art{
+	width: calc((93% - 80px )/ 2);
+  
+	margin: 0;
+	margin-bottom: 90px;
+}	
+	
+	
+}
+
+
+.art .wrapper-art{
+	height: auto;
+}
+
+.wrapper-art img{
+	max-width: 100%;
+	height: auto;
+	cursor: pointer;
+}
+
+
+.art .wrapper-title{
+	height: auto;
+	text-align: center;
+	margin-top: 15px;
+}
+
+.wrapper-title h2 a{
+	text-decoration: none;
+	color: #008000b0;	
+}
+
+
+.wrapper-title h2 a:hover{
+	color: green;
+	transition: 1s ease;
+}
+
+
+#main .wrapper-main:first-child{
+}
+
+.wrapper-main .col-1 h2{
+	margin: 60px 0 44px 23px;
+	
+	margin-top: 70px;
+	border-bottom-width: 0px;
+	border-bottom-style: solid;
+	color: #168f16e8;
+	font-size: 31px;
+}
+
+.wrapper-main .wrapper .document-text .tex p{
+
+}
+
+.wrapper-main .col-1 .document-text .tex p{
+text-align: justify;
+padding: 0 25px;
+margin: 0 0 32px 0;
+font-size: 17px;
+line-height: 2.1;
+letter-spacing: 0em;
+}
+
+
+@media screen and (min-width: 1200px){
+
+	.articulos .art{
+	margin: 0;
+	width: calc((75% - 30px )/ 4);
+
+	}
+	
+	#main .wrapper-main{
+		/*! border: 1px solid black; */
+		/*! margin: auto 250px; */
+		display: flex;
+	}
+		#main .articulos{ 
+			/*! border: 1px solid black; */
+			margin-bottom: 40px;
+			padding: 14px;
+	}
+	
+	#app .app-header #menu-hamburguesa{
+		display: none;
+	}
+	
+	#menu-d-navegacion{
+	display: block;
+	margin: 45px 0 82px 0;
+	border: 1px solid #00000021;
+	border-top: 0;
+}
+	
+	#menu-d-navegacion ul{
+		list-style: none;
+	  text-align: right;
+		padding: 10px;
+		background: green;
+	}
+	
+	ul li{
+		display: inline;
+		margin: 3px 7px;
+	}
+	
+	li a{
+		color: #fff;
+		cursor: pointer;
+	}
+	
+	li a:hover{
+		border-bottom: 1px solid #fff;
+		border-radius: 1px;
+	}
+	
+	.wrapper-main{
+		margin: 0 30px;
+	}
+	
+	.wrapper-main .col-1{
+		width: 50%
+		
+	}
+	
+	.wrapper-main .col-2{
+		/*! border: 1px solid black; */
+		width: 50%;
+	}
+	
+	.col-2 #slider {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 20px;
+		margin-bottom: 50px;
+	}
+	
+	#slider .sli{
+		border-bottom: 1px solid #ddd;
+		height: 200px;
+		width: 400px;
+	}
+	
+	.sli .wrapper-img{
+		text-align: center;
+		padding-top: 11px;
+	}
+
+	.wrapper-img img{
+		max-width: 100%;
+		height: 178px;
+	}
+	
+	.sli .controls{
+	   text-align: center;
+	 padding: 4px;
+	 display: none;
+	}
+	
+	.controls span{
+		margin: 0 50px;
+	}
+	
+	.col-2 .list-noticias{display: flex;flex-direction: column;align-items: center;}
+	
+	.list-noticias .wrap-noti{
+		border-bottom: 1px solid #0000001f;
+		height: 270px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+		padding: 13px;
+		width: 85%;
+		margin-bottom: 30px;
+	}
+	 
+	.wrap-noti .noti{
+		width: 50%;
+		height: 200px;
+	}
+
+	.noti img{
+		max-width: 100%;
+		height: auto;
+		cursor: pointer;
+	}
+
+	.wrap-noti h3{
+		text-align: center;
+		color: #189840b5;
+		cursor: pointer;
+		
+	}
+
+	.wrap-noti h3:hover{
+		color: green;
+		transition: 1s ease;
+	}
+	
+
+
+	
+	.wrapper-title .title a{
+		color: #189840b5;
+		font-size: 20px;
+		text-decoration: none;
+		padding: 0 6px;
+	}
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
